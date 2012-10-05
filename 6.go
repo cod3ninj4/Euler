@@ -22,5 +22,5 @@ func square_natural(x int) int{
 }
 
 func main() {
-	fmt.Printf("Difference: %d\n",square_sum(100) - square_natural(10))
+	fmt.Printf("Difference: %d\n",square_sum(100) - square_natural(100))
 }
