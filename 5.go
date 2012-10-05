@@ -16,7 +16,7 @@ func is_divisible(x, y int) bool {
 func divis_1_to_20(x int) bool {
 	var divis bool = true
 	for divis == true{
-		for i := 2; i <= 20; i+= 1{
+		for i := 3; i <= 20; i+= 1{
 			divis = is_divisible(x, i)
 			if divis == false{
 				i = 99
