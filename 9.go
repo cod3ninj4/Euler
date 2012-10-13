@@ -13,12 +13,11 @@ func main(){
 					if a + b + c == 1000 {
 						fmt.Printf("A: %d B: %d C: %d\n", a, b, c)
 						fmt.Printf("Product: %d\n", a * b * c)
-						a = 1000
-						b = 1000
-						c = 1000
+						goto Done
 					}
 				}
 			}
 		}
 	}	
+Done:
 }
