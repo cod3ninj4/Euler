@@ -65,12 +65,12 @@ func main() {
 		}
 	}
 	//Calculate down/left diag
-	for x := 3; x < 20; x++ {
+	for x := 0; x < 17; x++ {
 		for y := 3; y < 20; y++ {
 			a := number[x][y]
-			b := number[x-1][y-1]
-			c := number[x-2][y-2]
-			d := number[x-3][y-3]
+			b := number[x+1][y-1]
+			c := number[x+2][y-2]
+			d := number[x+3][y-3]
 			cval = int64(a * b * c * d)
 			if cval > largest {
 				largest = cval
