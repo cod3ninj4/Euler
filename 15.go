@@ -12,6 +12,12 @@ func factorial(n int64) *big.Int{
 	ans := big.NewInt(0)
 	return ans.Mul(big.NewInt(n), factorial(n-1))
 }
+
+/*
+  the formula for number of routes is 
+  (n!)/(x! * y!) where n = x + y
+  n possible steps with x steps right and y steps down
+*/
 func findRoutes(x int64, y int64) *big.Int{
 	routes := big.NewInt(0)
 	routes = routes.Mul(factorial(x), factorial(y))
