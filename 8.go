@@ -1,10 +1,11 @@
 package main
+
 //Find the largest product of 5 consecutive numbers in the string below
 
 import (
 	"fmt"
-	"strings"
 	"strconv"
+	"strings"
 )
 
 func main() {

@@ -4,19 +4,19 @@ import (
 	"fmt"
 )
 
-func is_prime(n int64) bool{
+func is_prime(n int64) bool {
 	var prime bool = false
 	if n <= 1 {
 		return prime
 	}
-	if n % 2 == 0{
+	if n%2 == 0 {
 		return prime
 	}
 	var max int64 = n
 	var x int64
-	for x = 3; x < max +1; x = x + 2 {
+	for x = 3; x < max+1; x = x + 2 {
 		max = n / x
-		if n % x == 0 {
+		if n%x == 0 {
 			return prime
 		}
 	}
@@ -24,7 +24,7 @@ func is_prime(n int64) bool{
 	return prime
 }
 
-func find_prime(x int) int{
+func find_prime(x int) int {
 	var num int = 0
 	var value int = 0
 	var place int = 2
@@ -38,6 +38,6 @@ func find_prime(x int) int{
 	return value
 }
 
-func main () {
-	fmt.Printf("10,001 Prime: %d\n", find_prime(10001))	
+func main() {
+	fmt.Printf("10,001 Prime: %d\n", find_prime(10001))
 }

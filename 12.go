@@ -1,4 +1,5 @@
-package main 
+package main
+
 /*
   First triagle number with over 500 factors.
   Note, you only need to check up to the SQRT of the number b/c every
@@ -8,13 +9,14 @@ import (
 	"fmt"
 	"math"
 )
+
 func main() {
 	number := 0
-	for x := 1; x > 0 ; x++ {
-	number += x
-	factors := 0
+	for x := 1; x > 0; x++ {
+		number += x
+		factors := 0
 		for i := 1; i <= int(math.Sqrt(float64(number))); i++ {
-			if number % i == 0 {
+			if number%i == 0 {
 				factors += 2
 			}
 		}
@@ -23,6 +25,5 @@ func main() {
 			goto Done
 		}
 	}
-	Done:
-	
+Done:
 }

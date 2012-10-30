@@ -1,10 +1,11 @@
 package main
+
 // find the largest product of any set of five consecutive numbers in the txt file (20x20 grid)
 import (
 	"fmt"
 	"io/ioutil"
-	"strings"
 	"strconv"
+	"strings"
 )
 
 func main() {
@@ -16,7 +17,7 @@ func main() {
 		fmt.Print("Error in Read\n")
 	}
 	lines := strings.Split(string(content), "\n")
-	for x := 0; len(lines)> x+1; x++ {
+	for x := 0; len(lines) > x+1; x++ {
 		values := strings.Split(lines[x], " ")
 		for y := 0; y < 20; y++ {
 			number[x][y], err = strconv.Atoi(values[y])

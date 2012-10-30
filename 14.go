@@ -1,6 +1,7 @@
 package main
+
 //Which starting number, under one million, produces the longest Collatz chain
-import(
+import (
 	"fmt"
 )
 
@@ -13,10 +14,10 @@ func main() {
 		count := 1
 		for num > 1 {
 			count++
-			if num % 2 == 0 {
-				num = num/2
-			}else{
-				num = ((3*num) + 1)
+			if num%2 == 0 {
+				num = num / 2
+			} else {
+				num = ((3 * num) + 1)
 			}
 		}
 		if count > largest {
